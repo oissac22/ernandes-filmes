@@ -1,0 +1,169 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+
+/* Mudança de Visual Geral */
+
+body{
+
+    background-color: #3e2723;
+
+ }
+ 
+/* Cabeçario */
+
+.topo_sinop{
+
+   background-color: #2b1d19;
+   padding: 10px;
+   text-align: center;
+   margin-top: 10px;
+   border-radius: 30px;
+   box-shadow: 6px 5px #0000009e;
+
+   background-image: url(imagem/rottenpotato.png);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+}
+
+.menu_sinop{
+
+   background-color: #4e342e;
+   overflow: hidden;
+   border-radius: 60px;
+   margin-top: 20px;
+   box-shadow: 6px 5px #0000009e;
+
+}
+
+.menu_sinop a{
+
+   color: white;
+   padding: 14px 16px;
+   float: left;
+   display: block;
+   text-decoration: none;
+
+}
+
+.button_voltar{
+
+   font-family: "Josefin Sans", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 400;
+   font-style: normal;
+   background-color: transparent;
+   border: none;
+
+}
+
+.h_sinop{
+
+   font-family: "Righteous", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+
+   font-size: 50px;
+   color: rgb(204, 102, 51);
+
+}
+
+.h2_sinop_princ{
+
+   font-family: "Josefin Sans", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 400;
+   font-style: normal;
+   font-size: 40px;
+
+}
+
+.h2_sinop{
+
+   font-family: "Josefin Sans", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 400;
+   font-style: normal;
+   font-size: 30px;
+
+   margin-top: 20px;
+   color: rgb(255, 219, 88);
+
+}
+
+.p_sinop{
+
+   font-family: "Josefin Sans", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 400;
+   font-style: normal;
+   font-size: 20px;
+
+}
+
+.p_sinop_princ{
+
+   width: 300;
+   height: 300;
+   color: white;
+
+}
+
+.img_sinop{
+
+   margin-right: 20px;
+   margin-top: 20px;
+   border-radius: 10px;
+   float: left;
+
+}
+
+ /*Parte do Catalogo*/
+
+ .crit{
+
+   font-family: "Neucha", serif;
+   font-weight: 400;
+   font-style: normal;
+   color: rgb(255, 219, 88);
+
+ }
+
+ .container_vered{
+
+   background-color: #4e342e;
+   overflow: hidden;
+   border-radius: 40px;
+   font-size: 25px;
+   box-shadow: 6px 5px #0000009e;
+   
+
+ }
+
+ .p_crit1{
+   
+   font-family: "Neucha", serif;
+   font-weight: 400;
+   font-style: normal;
+   margin-left: 40px;
+   font-size: 20px;
+   color: white;
+ }
+
+ .p_crit2{
+   font-family: "Josefin Sans", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 400;
+   font-style: normal;
+   margin-left: 40px;
+   margin-right: 40px;
+   font-size: 18px;
+   color: white;
+   text-indent: 20px;
+ }

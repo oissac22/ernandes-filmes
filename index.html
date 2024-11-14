@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotten Potato</title>
+     
+    <link rel="shortcut icon" href="imagem/imagem_rotten_potato_23.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="paginaprincipal.css">  
+    <script>
+      async function carregarFilmes(){
+        const request=await fetch("api/listafilmes.php");
+        const filmes=await request.json();
+        console.log(filmes);
+        const div=document.getElementById("listafilmes");
+        div.innerHTML = filmes.map(function({ id, titulo, ano, genero, url }) {
+          return `<a class="cardFilme" style="background-image:url(${url});" href="./novo.php?id=${id}">
+            <div>
+              <div>${titulo}</div>
+              <div>${genero} - ${ano}</div>
+            </div>
+          </a>`;
+        })
+      }
+      window.addEventListener("DOMContentLoaded", carregarFilmes);
+    </script>
+    <style>
+      #listafilmes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .cardFilme {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 130px;
+        height: 195px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-size: 10px;
+        cursor: pointer;
+      }
+      .cardFilme>div {
+        background-color: rgba(255,255,255,.8);
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <img src="imagem/logobatata.png" >
+      </header>
+      <div class="alinhamento_geral">
+        <div class="alinhamento">
+          <nav>
+            <h2>categorias</h2>
+              <ul>
+
+                <button class="button_ctg">
+                  <li><a href="pagina_açao.html" class="linkcategoria">Ação</a></li>
+                </button>
+
+                <button class="button_ctg">
+                  <li><a href="pagina_aventura.html" class="linkcategoria">Aventura</a></li>
+                </button>
+  
+                <button class="button_ctg">
+                  <li><a href="pagina_anime.html" class="linkcategoria">Anime</a></li>
+                </button>
+  
+                <button class="button_ctg">
+                  <li><a href="pagina_comedia.html" class="linkcategoria">Comedia</a></li>
+                </button>
+  
+                <button class="button_ctg">
+                  <li><a href="pagina_terror.html" class="linkcategoria">Terror</a></li>
+                  
+                 
+
+              </ul>
+          </nav>
+          <section class="encontre">
+            <h2>Nos encontre</h2>
+              <ul>
+                  <button class="button_net">
+                    <li><a class="linkcategoria">Instagram</a></li>
+                  </button>
+    
+                  <button class="button_net">
+                    <li><a class="linkcategoria">Threads</a></li>
+                  </button>
+    
+                  <button class="button_net">
+                    <li><a class="linkcategoria">Tiktok</a></li>
+                  </button>
+              </ul>
+              <span><p>Rottenpotato@email.com</p></span>
+          </section> 
+        </div >  
+         <div class="flex">
+            <article>
+              <h1>Descrição do Website</h1>
+                <p id="centralizado">Seja bem vindo ao Rotten potato!</p>
+                <p class="justificado"> O Rotten Potato é uma plataforma dedicada exclusivamente à crítica e análise de filmes, onde os próprios fundadores se encarregam de avaliar cada produção com olhar técnico, apaixonado e criterioso. Diferente de outros sites, que abrem espaço para avaliações do público em geral, o Rotten Potato mantém suas críticas exclusivamente nas mãos de seus criadores, garantindo uma curadoria cuidadosa e padronizada, ideal para a comunidade cinéfila em busca de opiniões confiáveis e bem fundamentadas.</p>
+                <p class="justificado"> Nosso objetivo é fornecer aos amantes de cinema uma referência sólida para a escolha de seus próximos filmes. Em cada crítica, exploramos detalhes que fazem a diferença, como o enredo, a qualidade das atuações, o trabalho de direção, a fotografia, a trilha sonora e o impacto emocional da obra. Não nos limitamos a resumos e pontuações genéricas; oferecemos uma análise profunda que considera o contexto e a proposta de cada filme, além de comparações com obras similares para um entendimento mais completo.</p>
+                <p class="justificado"> O Rotten Potato é, portanto, um ponto de encontro para quem deseja ir além das impressões superficiais e quer entender o que realmente torna um filme imperdível — ou decepcionante. Nosso compromisso é com a verdade e a paixão pelo cinema, ajudando nossa comunidade a fazer escolhas conscientes e aproveitarem ao máximo suas sessões de cinema. Aqui, você encontrará tanto críticas detalhadas de lançamentos quanto de clássicos que marcaram a história do cinema. Sinta-se à vontade para explorar e descobrir filmes que, segundo nossas avaliações, realmente valem o seu tempo.</p>
+            </article>
+            <section class="filmes">
+              <h2>Filmes</h2>
+               <p>Alguns filmes para você:</p>
+               <div id="listafilmes"></div>
+                <button class="but_fil">
+                  <a href="pagina_ação_Sinopse/pagina_batmam.html" class="section_img"><img src="imagem_geral/batmam_500.jpg"></a>
+                </button>
+                <button class="but_fil">
+                  <a href="pagina_comedia_Sinops/projeto_x_sinops.html" class="section_img"><img src="imagem_geral/projeto_x_500.jpg"></a>
+                </button>
+                <a href="novo.php" class="button">Adicionar novo filme</a>
+            </section>
+         </div>
+      </div>
+      <footer>
+        <p> Esse pagina principal foi feito a mão por Gabriel josé , Joao Henrique!  </p>
+      </footer>
+    </main>
+  </body> 
+</html>

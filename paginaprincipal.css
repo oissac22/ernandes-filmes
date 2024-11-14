@@ -1,0 +1,505 @@
+@charset "utf-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+/*
+     #   = id
+     .   = class
+     :   = pseudo-class
+     ::  = pseudo - element
+     >   = clildren - elemento filho
+*/
+
+body {
+  max-height: auto;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #3e2723;
+}
+
+main {
+  background-color: #3e2723;
+  padding: 1px 1px;
+}
+
+div.alinhamento_geral {
+  display: flex;
+  padding: 1px 1px;
+}
+
+/* titulo */
+header {
+  width: 1170px;
+  height: 100px;
+
+  margin-top: 5px;
+  margin-bottom: 10px;
+  margin-left: 12px;
+  margin-right: 20px;
+
+  background-image: url(imagem/rottenpotato.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  border-radius: 25px;
+
+  box-shadow: 6px 5px #0000009e;
+}
+header > img {
+  padding: 5px 540px;
+  height: 90px;
+}
+
+/* titulo */
+
+div.alinhamento {
+  display: inline-flex;
+  flex-direction: column;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+/* categorias*/
+nav {
+  background-color: #4e342e;
+  width: 200px;
+  height: 235px;
+
+  border-radius: 25px;
+
+  box-shadow: 6px 5px #0000009e;
+}
+
+nav > h2 {
+  font-family: "Monoton", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  color: rgb(255, 219, 88);
+  font-size: 20px;
+}
+
+.button_ctg {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background-color: transparent;
+  border: none;
+  text-align: left;
+  text-align: center;
+  font-size: 16px;
+  display: block;
+  margin: 5px 0;
+}
+
+.button_ctg:hover {
+  transform: translateY(-3px);
+}
+
+/* categorias*/
+
+/* nos encontre */
+section.encontre {
+  background-color: #4e342e;
+  width: 200px;
+  height: 235px;
+  margin-top: 10px;
+
+  border-radius: 25px;
+  box-shadow: 6px 5px #0000009e;
+}
+nav ul,
+li {
+  color: white;
+}
+
+li > a {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+span > p {
+  color: white;
+  text-align: center;
+}
+
+.button_net {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background-color: transparent;
+  border: none;
+  text-align: left;
+  font-size: 16px;
+  display: block;
+  margin: 5px 0;
+}
+
+.button_net:hover {
+  transform: translateY(-3px);
+}
+
+/* nos encontre*/
+
+/*descrição do website / filmes*/
+div.flex {
+  display: flex;
+}
+article {
+  background-color: #4e342e;
+
+  width: 750px;
+  height: 480px;
+  margin-right: 10px;
+
+  border-radius: 25px;
+  box-shadow: 6px 5px #0000009e;
+}
+
+article > h1 {
+  font-family: "Monoton", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 20px;
+  color: rgb(255, 219, 88);
+}
+
+article #centralizado {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  color: white;
+}
+
+p.justificado {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-align: justify;
+  margin-right: 10px;
+  margin-left: 10px;
+
+  color: white;
+}
+section.filmes {
+  display: block;
+  background-color: #4e342e;
+
+  width: 200px;
+  height: 460px;
+  padding-top: 20px;
+
+  border-radius: 25px;
+  box-shadow: 6px 5px #0000009e;
+  overflow: auto;
+}
+
+section > h2 {
+  font-family: "Monoton", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 18px;
+  color: rgb(255, 219, 88);
+}
+
+section > p {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  text-align: center;
+  color: white;
+  margin-top: auto;
+}
+
+.but_fil {
+  color: black;
+  border: none;
+  padding: 0px 0px;
+  border-radius: 5px;
+  background-color: transparent;
+  transition: transform 0.5s ease;
+}
+
+.but_fil:hover {
+  transform: scale(1.1);
+}
+
+.section_img {
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+  margin-left: 140px;
+}
+
+a > img {
+  display: block;
+  margin: 18px 52px;
+  width: 95px;
+  height: 100px;
+}
+
+a.button {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #07a;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/*descrição do website / filmes*/
+/*rodape*/
+footer {
+  box-shadow: 6px 5px #0000009e;
+  background-color: black;
+
+  width: 1170px;
+  height: 18px;
+  margin: 5px 10px;
+}
+footer > p {
+  text-align: center;
+  color: white;
+}
+
+/*rodape*/
+
+/*responsividade (celular - grande)*/
+@media (max-width: 425px) {
+ 
+  body {
+    max-height: 100%;
+    max-width: 425px;
+    margin-bottom: 0%;
+    margin-top: 0%;
+    background-color: #3e2723;
+  }
+
+  main {
+    width: 425px;
+    height: auto;
+  }
+  /*titulo*/
+  header {
+    width: 100%;
+    height: 10%;
+
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+
+    background-image: url(imagem/rottenpotato.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    border-radius: 10px;
+    box-shadow: 4px 4px #0000009e;
+  }
+  header > img {
+    padding-left: 40%;
+    padding-right: 40%;
+    height: 90px;
+  }
+  /*titulo*/
+  /*divs de alinhamento*/
+  div.alinhamento_geral {
+    display: flex;
+    flex-direction: column;
+    padding: 1px 1px;
+  }
+
+  div.alinhamento {
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+
+  div.flex {
+    display: block;
+    flex-direction: column;
+  }
+  /*divs de alinhamento*/
+  /*barra de navegação*/
+  nav {
+    background-color: #4e342e;
+    width: 100%;
+    height: 65px;
+    border-radius: 0;
+    box-shadow: 4px 4px #0000009e;
+  }
+  nav > ul {
+    display: inline-flex;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 8px 2%;
+    
+  }
+  nav > h2 {
+    width: 100%;
+    height: 20px;
+    margin: 1px 5px;
+    font-size: 18px;
+  }
+  nav > a {
+    padding: 5px;
+    
+  }
+  .button_ctg {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    font-size: 14px;
+    display: block;
+    margin: 5px 4px;
+    padding: 0 3%;
+  }
+  /*barra de navegação*/
+
+  section.encontre {
+    display: none;
+  }
+
+  /*descrição do web site*/
+  article {
+    background-color: #4e342e;
+    width: 100%;
+    height: 640px;
+    margin-right: 0;
+    border-radius: 0;
+    box-shadow: 4px 4px #0000009e;
+  }
+  article > p {
+    font-size: 14px;
+  }
+  /*descrição do web site*/
+  /*filmes*/
+  section.filmes {
+    display: block;
+    background-color: #4e342e;
+    width: 100%;
+    height: 460px;
+    padding-top: none;
+    margin-top: 10px;
+    border-radius: none;
+    box-shadow: none;
+    overflow: auto;
+  }
+
+  section.filmes {
+    display: block;
+    background-color: #4e342e;
+    width: 100%;
+    height: 308px;
+    padding: 0px;
+    margin-top: 10px;
+    border-radius: 0;
+    box-shadow: 4px 4px #0000009e;
+    overflow: auto;
+  }
+
+  section > h2 {
+    font-size: 18px;
+    margin: 1px 0px;
+  }
+  section > p {
+    margin: 5px;
+    
+  }
+  a.section_img {
+    width: 20px;
+    height: 50px;
+    margin-left: 0;
+  }
+  a > img {
+    width: 125px;
+    height: 150px;
+    margin: 6px 6px;
+  }
+  .but_fil {
+    width: 136px;
+    height: 157px;
+    margin: 5px 142px;
+    color: black;
+    border: none;
+    padding: 0px 0px;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: transform 0.5s ease;
+  }
+  a.button {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 2px 23%;
+  }
+  /*filmes*/
+  /*rodapé*/
+  footer {
+    box-shadow: 4px 4px #0000009e;
+    background-color: black;
+    width: 100%;
+    height: 10px;
+    margin: 5px 0;
+  }
+  footer > p {
+    font-size: 10px;
+    margin: 1px;
+  }
+  /*rodapé*/
+  /*iphone SE*/
+  @media (max-width: 375px) {
+    article > p {
+      font-size: 14px;
+    }
+    .but_fil {
+      width: 136px;
+      height: 157px;
+      margin: 5px 150px;
+      color: black;
+      border: none;
+      padding: 0px 0px;
+      border-radius: 5px;
+      background-color: transparent;
+      transition: transform 0.5s ease;
+    }
+  }
+  /*iphone SE*/
+}
+
+/*responsividade (celular)*/
